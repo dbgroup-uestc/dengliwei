@@ -189,7 +189,7 @@ if __name__=="__main__":
     #对于每个输入的<e,p,o>算出各自的 HCF_X
     X, Y = CaculateXY(revs, bag_of_words)
     HCF_X = model.transform(X)
-    HCF_X = HFC_X[:,0:100]  #选取前100维的特征向量
+    HCF_X = HCF_X[:,0:100]  #选取前100维的特征向量
     
     #设置训练参数
     #batch_size = 128    
